@@ -16,9 +16,9 @@ def batch_convert_to_mp3(input_folder, output_folder):
     
     # Iterate through each file in the input folder
     for filename in os.listdir(input_folder):
-        if filename.endswith(".wav"):  # Adjust the file extension as needed
+        if filename.endswith(".webm"):  # Adjust the file extension
             input_file = os.path.join(input_folder, filename)
-            output_file = os.path.join(output_folder, filename.replace(".wav", ".mp3")) # Change file extension
+            output_file = os.path.join(output_folder, filename.replace(".webm", ".mp3")) # Change file extension
             convert_to_mp3(input_file, output_file)
 
 # Example usage
